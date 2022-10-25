@@ -19,7 +19,7 @@ class frequency {
     //String ch = in.nextLine();
     //char character = ch.charAt(0);
 
-    character.toLowerCase();
+    
 
     for (int i = 0; i < str.length(); i++) {
       if (str.charAt(i) == character) {
