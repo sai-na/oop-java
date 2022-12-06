@@ -39,7 +39,7 @@ class doubly{
 			// node added into end of the linked list
 			current_node.data = arr[index];
 			current_node.next = null;
-			fcurrent_node.previous = previous_node;
+			current_node.previous = previous_node;
 			index++;
 			previous_node = current_node;
 		}
