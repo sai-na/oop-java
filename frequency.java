@@ -19,8 +19,6 @@ class frequency {
     //String ch = in.nextLine();
     //char character = ch.charAt(0);
 
-    
-
     for (int i = 0; i < str.length(); i++) {
       if (str.charAt(i) == character) {
         freq++;

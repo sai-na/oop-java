@@ -1,11 +1,6 @@
 import java.util.Scanner;
 
-
-
-public class mulMatrix 
-
- 
- {
+public class mulMatrix {
 
   public static void main(String args[]) {
     int row1, col1, row2, col2;
@@ -57,11 +52,10 @@ public class mulMatrix
         for (int k = 0; k < col1; k++) {
           c[i][j] += a[i][k] * b[k][j];
         }
-        
+
         System.out.print(c[i][j] + " ");
       }
       System.out.println();
     }
   }
 }
-
