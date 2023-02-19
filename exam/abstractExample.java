@@ -3,47 +3,47 @@ abstract class Shape {
   abstract void noOfSides();
 }
 
-class triangle extends Shape {
+class Triangle extends Shape {
 
   void noOfSides() {
     System.out.println("3 sides");
   }
 }
 
-class rectangle extends Shape {
+class Rectangle extends Shape {
 
   void noOfSides() {
     System.out.println("4 sides");
   }
 }
 
-class pentagon extends Shape {
+class Pentagon extends Shape {
 
   void noOfSides() {
-    System.out.println("5` sides");
+    System.out.println("5 sides");
   }
 }
 
-class hexagon extends Shape {
+class Hexagon extends Shape {
 
   void noOfSides() {
     System.out.println("6 sides");
   }
 }
 
-class abstractExample {
+class AbstractExample {
 
   public static void main(String[] args) {
-    triangle tri = new triangle();
+    Triangle tri = new Triangle();
     tri.noOfSides();
 
-    rectangle re = new rectangle();
+    Rectangle re = new Rectangle();
     re.noOfSides();
 
-    pentagon pt = new pentagon();
+    Pentagon pt = new Pentagon();
     pt.noOfSides();
 
-    hexagon he = new hexagon();
+    Hexagon he = new Hexagon();
     he.noOfSides();
   }
 }
