@@ -43,7 +43,7 @@ public class ThreadSyncThread {
     A aobj = new A(p);
     B bobj = new B(p);
 
-    aobj.start();
     bobj.start();
+    aobj.start();
   }
 }
