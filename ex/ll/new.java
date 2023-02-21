@@ -1,5 +1,12 @@
 import java.util.*;
 
+class node {
+
+  int data;
+  node next;
+  node previous;
+}
+
 class linkedlist {
 
   public static void main(String[] args) {
@@ -19,26 +26,21 @@ class linkedlist {
       b = sc.nextInt();
       switch (b) {
         case 1:
-          System.out.print("Enter number of nodes:");
-          int n = sc.nextInt();
-          for (i = 0; i < n; i++) {
-            System.out.print("enter data:");
-            a[i] = sc.nextInt();
+          System.out.print("enter data:");
+          j = sc.nextInt();
+
+          currentnode = new node();
+          if (previousnode != null) {
+            previousnode.next = currentnode;
+          } else {
+            startnode = currentnode;
           }
-          while (j < n) {
-            currentnode = new node();
-            if (j > 0) {
-              previousnode.next = currentnode;
-            } else {
-              startnode = currentnode;
-            }
-            currentnode.data = a[j];
-            currentnode.next = null;
-            currentnode.previous = previousnode;
-            j++;
-            previousnode = currentnode;
-          }
-          System.out.println("Linkedlist created");
+          currentnode.data = j;
+          currentnode.next = null;
+          currentnode.previous = previousnode;
+          previousnode = currentnode;
+
+          System.out.println("Linked list created");
           break;
         case 2:
           System.out.print("Enter key:");
@@ -71,6 +73,7 @@ class linkedlist {
           if (!found) {
             System.out.println("Key not found");
           }
+          break;
         case 3:
           System.out.println("displaying linkedlist");
           currentnode = startnode;
